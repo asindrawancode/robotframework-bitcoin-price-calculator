@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.6 on darwin)" generated="20241102 22:11:19.102" rpa="false" schemaversion="4">
+<suite id="s1" name="Home Tests" source="/Users/agussriindrawansigit/IdeaProjects/robotframework-bitcoin-price-calculator/tests/home_tests.robot">
+<test id="s1-t1" name="Verify Page Title and Content" line="6">
+<kw name="Open Home Page" library="home_keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${BASE_URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20241102 22:11:19.209" level="INFO">Opening browser 'chrome' to base url 'http://localhost:5173/'.</msg>
+<status status="PASS" starttime="20241102 22:11:19.208" endtime="20241102 22:11:29.883"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20241102 22:11:29.884" endtime="20241102 22:11:32.415"/>
+</kw>
+<status status="PASS" starttime="20241102 22:11:19.208" endtime="20241102 22:11:32.415"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${HOME_PAGE_TITLE}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20241102 22:11:32.471" level="INFO">Page title is 'Bitcoin Price Calculator'.</msg>
+<status status="PASS" starttime="20241102 22:11:32.415" endtime="20241102 22:11:32.471"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Simple, traffic-based pricing</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20241102 22:11:32.669" level="INFO">Current page contains text 'Simple, traffic-based pricing'.</msg>
+<status status="PASS" starttime="20241102 22:11:32.471" endtime="20241102 22:11:32.670"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>PageViews</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20241102 22:11:32.690" level="INFO">Current page contains text 'PageViews'.</msg>
+<status status="PASS" starttime="20241102 22:11:32.670" endtime="20241102 22:11:32.691"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>/ month</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20241102 22:11:32.708" level="INFO">Current page contains text '/ month'.</msg>
+<status status="PASS" starttime="20241102 22:11:32.691" endtime="20241102 22:11:32.708"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>25%</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20241102 22:11:32.718" level="INFO">Current page contains text '25%'.</msg>
+<status status="PASS" starttime="20241102 22:11:32.708" endtime="20241102 22:11:32.718"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>discount</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20241102 22:11:32.727" level="INFO">Current page contains text 'discount'.</msg>
+<status status="PASS" starttime="20241102 22:11:32.718" endtime="20241102 22:11:32.727"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Monthly Billing</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20241102 22:11:32.735" level="INFO">Current page contains text 'Monthly Billing'.</msg>
+<status status="PASS" starttime="20241102 22:11:32.727" endtime="20241102 22:11:32.736"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Yearly Billing</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20241102 22:11:32.774" level="INFO">Current page contains text 'Yearly Billing'.</msg>
+<status status="PASS" starttime="20241102 22:11:32.736" endtime="20241102 22:11:32.774"/>
+</kw>
+<status status="PASS" starttime="20241102 22:11:19.208" endtime="20241102 22:11:32.774"/>
+</test>
+<status status="PASS" starttime="20241102 22:11:19.103" endtime="20241102 22:11:32.775"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Home Tests">Home Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
